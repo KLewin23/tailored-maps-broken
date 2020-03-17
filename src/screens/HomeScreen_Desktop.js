@@ -2,14 +2,14 @@ import React from 'react'
 import {withStyles, Grid} from '@material-ui/core'
 import image from '../../assets/icon.png'
 
-function HomeScreen(props) {
+function HomeScreen_Desktop(props) {
     const classes = props.classes;
     return(
         <div className={classes.main}>
             <img src={image} className={classes.logo}/>
             <Grid container direction='column'>
-                <Grid item>xxx</Grid>
-                <Grid item>dddx</Grid>
+                <Grid item>Home</Grid>
+                <Grid item>Desktop</Grid>
             </Grid>
         </div>
     )
@@ -25,4 +25,4 @@ const styles = {
     }
 };
 
-export default withStyles(styles)(HomeScreen);
+export default withStyles(styles)(HomeScreen_Desktop);

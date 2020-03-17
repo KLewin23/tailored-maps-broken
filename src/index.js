@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import * as serviceWorker from './serviceWorker'
-import HomeScreen from './screens/HomeScreen.js'
+import HomeScreen_Mobile from './screens/HomeScreen_Mobile.js'
+import HomeScreen_Desktop from "./screens/HomeScreen_Desktop";
+import mobile from 'is-mobile'
 
-ReactDOM.render(<HomeScreen />, document.getElementById('index'));
+const Screen = (mobile())? HomeScreen_Mobile : HomeScreen_Desktop;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+ReactDOM.render(
+    <Screen />
+    , document.getElementById('index')
+);
+
 serviceWorker.register();
