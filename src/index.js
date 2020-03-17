@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import * as serviceWorker from './serviceWorker'
+//import * as serviceWorker from './serviceWorker'
 import HomeScreen_Mobile from './screens/HomeScreen_Mobile.js'
 import HomeScreen_Desktop from "./screens/HomeScreen_Desktop";
 import mobile from 'is-mobile'
@@ -12,4 +12,4 @@ ReactDOM.render(
     , document.getElementById('index')
 );
 
-serviceWorker.register();
+//serviceWorker.register();

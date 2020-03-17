@@ -2,24 +2,14 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "dev": "webpack --watch",
-    "build": "webpack",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "build": "webpack"
   },
   "dependencies": {
-    "@ibm/plex": "^4.0.2",
     "@material-ui/core": "latest",
-    "expo": "~36.0.0",
     "is-mobile": "^2.2.1",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-web": "~0.11.7",
-    "react-router-dom": "^5.1.2",
-    "typeface-ibm-plex-sans": "0.0.75"
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
