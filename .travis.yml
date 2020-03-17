@@ -11,8 +11,9 @@ branches:
   except:
     - gh-pages
     - dev
+    - webpage
   only:
-    - master
+    - webpage
 
 before_script:
   - npm install -g npm@latest
